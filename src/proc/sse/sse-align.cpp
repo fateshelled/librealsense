@@ -52,7 +52,7 @@ inline void distorte_x_y<RS2_DISTORTION_MODIFIED_BROWN_CONRADY>(const __m128& x,
     auto d_x0 = _mm_add_ps(x_f0, _mm_add_ps(_mm_mul_ps(two, _mm_mul_ps(c[2], _mm_mul_ps(x_f0, y_f0))), r4_0));
 
     auto r5_0 = _mm_mul_ps(c[2], _mm_add_ps(r2_0, _mm_mul_ps(two, _mm_mul_ps(y_f0, y_f0))));
-    auto d_y0 = _mm_add_ps(y_f0, _mm_add_ps(_mm_mul_ps(two, _mm_mul_ps(c[3], _mm_mul_ps(x_f0, y_f0))), r4_0));
+    auto d_y0 = _mm_add_ps(y_f0, _mm_add_ps(_mm_mul_ps(two, _mm_mul_ps(c[3], _mm_mul_ps(x_f0, y_f0))), r5_0));
 
     *distorted_x = d_x0;
     *distorted_y = d_y0;
