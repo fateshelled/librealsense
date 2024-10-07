@@ -1,8 +1,7 @@
 // License: Apache 2.0. See LICENSE file in root directory.
 // Copyright(c) 2024 Intel Corporation. All Rights Reserved.
 
-#ifndef LIBREALSENSE_NEON_ALIGN_H
-#define LIBREALSENSE_NEON_ALIGN_H
+#pragma once
 
 #include "proc/align.h"
 #include <src/float3.h>
@@ -86,5 +85,3 @@ namespace librealsense
 #endif
 #endif
 } // namespace librealsense
-
-#endif
